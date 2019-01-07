@@ -1,0 +1,18 @@
+github "konkab/AlamofireNetworkActivityLogger"
+github "xmartlabs/XLPagerTabStrip"
+github "eggswift/ESTabBarController"
+git "https://github.com/Moya/Moya" "12.0.0-beta.1"
+github "onevcat/Kingfisher"
+git "https://github.com/alibaba/HandyJSON" "4.2.0-beta1"
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
+
+git "https://github.com/fxwx23/JSONRPCKit" "xcode10-swift4.2"
+github "ashleymills/Reachability.swift"
+git "https://github.com/hackiftekhar/IQKeyboardManager" "v6.1.1"
+github "EyreFree/EFQRCode"
+
+github "mac-cain13/R.swift.Library"
+github "roberthein/TinyConstraints"
+github "xmartlabs/XLActionController" ~> 4.0
+github "eggswift/pull-to-refresh"
+binary "https://cybexdex.github.io/cybex-ios-core-cpp/Carthage/iOS/cybex-ios-core-cpp.json"

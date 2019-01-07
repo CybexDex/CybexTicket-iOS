@@ -1,0 +1,2 @@
+#静态库
+git "https://github.com/phpmaple/NBLCommonModule" "master"

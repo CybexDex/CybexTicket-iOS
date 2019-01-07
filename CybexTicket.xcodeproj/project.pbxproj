@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73D9C16321E32F97005B9022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C16221E32F97005B9022 /* AppDelegate.swift */; };
+		73D9C16521E32F97005B9022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C16421E32F97005B9022 /* ViewController.swift */; };
+		73D9C16821E32F97005B9022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D9C16621E32F97005B9022 /* Main.storyboard */; };
+		73D9C16A21E32F99005B9022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D9C16921E32F99005B9022 /* Assets.xcassets */; };
+		73D9C16D21E32F99005B9022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D9C16B21E32F99005B9022 /* LaunchScreen.storyboard */; };
+		73D9C17821E32F99005B9022 /* CybexTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C17721E32F99005B9022 /* CybexTicketTests.swift */; };
+		73D9C1A521E338B5005B9022 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18921E338B4005B9022 /* Reachability.framework */; };
+		73D9C1A621E338B5005B9022 /* JSONRPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18A21E338B4005B9022 /* JSONRPCKit.framework */; };
+		73D9C1A721E338B5005B9022 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18B21E338B4005B9022 /* Result.framework */; };
+		73D9C1A821E338B5005B9022 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18C21E338B4005B9022 /* Kingfisher.framework */; };
+		73D9C1A921E338B5005B9022 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18D21E338B4005B9022 /* RxSwift.framework */; };
+		73D9C1AA21E338B5005B9022 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18E21E338B4005B9022 /* TinyConstraints.framework */; };
+		73D9C1AB21E338B5005B9022 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C18F21E338B4005B9022 /* IQKeyboardManagerSwift.framework */; };
+		73D9C1AC21E338B5005B9022 /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19021E338B4005B9022 /* IQKeyboardManager.framework */; };
+		73D9C1AE21E338B5005B9022 /* cybex_ios_core_cpp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19221E338B4005B9022 /* cybex_ios_core_cpp.framework */; };
+		73D9C1AF21E338B5005B9022 /* AlamofireNetworkActivityLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19321E338B4005B9022 /* AlamofireNetworkActivityLogger.framework */; };
+		73D9C1B021E338B5005B9022 /* ESPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19421E338B4005B9022 /* ESPullToRefresh.framework */; };
+		73D9C1B121E338B5005B9022 /* XLActionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19521E338B4005B9022 /* XLActionController.framework */; };
+		73D9C1B221E338B5005B9022 /* swift_qrcodejs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19621E338B4005B9022 /* swift_qrcodejs.framework */; };
+		73D9C1B321E338B5005B9022 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19721E338B4005B9022 /* ESTabBarController.framework */; };
+		73D9C1B421E338B5005B9022 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19821E338B4005B9022 /* ReactiveSwift.framework */; };
+		73D9C1B521E338B5005B9022 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19921E338B4005B9022 /* RxCocoa.framework */; };
+		73D9C1B621E338B5005B9022 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19A21E338B4005B9022 /* RxAtomic.framework */; };
+		73D9C1B721E338B5005B9022 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19B21E338B4005B9022 /* Moya.framework */; };
+		73D9C1B821E338B5005B9022 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19C21E338B4005B9022 /* XLPagerTabStrip.framework */; };
+		73D9C1B921E338B5005B9022 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19D21E338B4005B9022 /* Rswift.framework */; };
+		73D9C1BA21E338B5005B9022 /* HandyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19E21E338B4005B9022 /* HandyJSON.framework */; };
+		73D9C1BB21E338B5005B9022 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C19F21E338B4005B9022 /* RxBlocking.framework */; };
+		73D9C1BC21E338B5005B9022 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1A021E338B4005B9022 /* Alamofire.framework */; };
+		73D9C1BD21E338B5005B9022 /* EFQRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1A121E338B4005B9022 /* EFQRCode.framework */; };
+		73D9C1BE21E338B5005B9022 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1A221E338B4005B9022 /* ReactiveMoya.framework */; };
+		73D9C1BF21E338B5005B9022 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1A321E338B4005B9022 /* SwiftyJSON.framework */; };
+		73D9C1C021E338B5005B9022 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1A421E338B4005B9022 /* RxMoya.framework */; };
+		73D9C1C521E33AA3005B9022 /* NBLCommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */; };
+		73D9C1C621E33AA3005B9022 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C321E33AA3005B9022 /* SwifterSwift.framework */; };
+		73D9C1C921E33B24005B9022 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C821E33B24005B9022 /* SocketRocket.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73D9C17421E32F99005B9022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73D9C15721E32F97005B9022 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73D9C15E21E32F97005B9022;
+			remoteInfo = CybexTicket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		73D9C15F21E32F97005B9022 /* CybexTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CybexTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D9C16221E32F97005B9022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73D9C16421E32F97005B9022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73D9C16721E32F97005B9022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73D9C16921E32F99005B9022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73D9C16C21E32F99005B9022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		73D9C16E21E32F99005B9022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D9C17321E32F99005B9022 /* CybexTicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CybexTicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D9C17721E32F99005B9022 /* CybexTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CybexTicketTests.swift; sourceTree = "<group>"; };
+		73D9C17921E32F99005B9022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D9C18921E338B4005B9022 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		73D9C18A21E338B4005B9022 /* JSONRPCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONRPCKit.framework; path = Carthage/Build/iOS/JSONRPCKit.framework; sourceTree = "<group>"; };
+		73D9C18B21E338B4005B9022 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		73D9C18C21E338B4005B9022 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		73D9C18D21E338B4005B9022 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		73D9C18E21E338B4005B9022 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/iOS/TinyConstraints.framework; sourceTree = "<group>"; };
+		73D9C18F21E338B4005B9022 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		73D9C19021E338B4005B9022 /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
+		73D9C19121E338B4005B9022 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		73D9C19221E338B4005B9022 /* cybex_ios_core_cpp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = cybex_ios_core_cpp.framework; path = Carthage/Build/iOS/cybex_ios_core_cpp.framework; sourceTree = "<group>"; };
+		73D9C19321E338B4005B9022 /* AlamofireNetworkActivityLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityLogger.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityLogger.framework; sourceTree = "<group>"; };
+		73D9C19421E338B4005B9022 /* ESPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESPullToRefresh.framework; path = Carthage/Build/iOS/ESPullToRefresh.framework; sourceTree = "<group>"; };
+		73D9C19521E338B4005B9022 /* XLActionController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLActionController.framework; path = Carthage/Build/iOS/XLActionController.framework; sourceTree = "<group>"; };
+		73D9C19621E338B4005B9022 /* swift_qrcodejs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = swift_qrcodejs.framework; path = Carthage/Build/iOS/swift_qrcodejs.framework; sourceTree = "<group>"; };
+		73D9C19721E338B4005B9022 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = Carthage/Build/iOS/ESTabBarController.framework; sourceTree = "<group>"; };
+		73D9C19821E338B4005B9022 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		73D9C19921E338B4005B9022 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		73D9C19A21E338B4005B9022 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		73D9C19B21E338B4005B9022 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		73D9C19C21E338B4005B9022 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
+		73D9C19D21E338B4005B9022 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
+		73D9C19E21E338B4005B9022 /* HandyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HandyJSON.framework; path = Carthage/Build/iOS/HandyJSON.framework; sourceTree = "<group>"; };
+		73D9C19F21E338B4005B9022 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		73D9C1A021E338B4005B9022 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		73D9C1A121E338B4005B9022 /* EFQRCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EFQRCode.framework; path = Carthage/Build/iOS/EFQRCode.framework; sourceTree = "<group>"; };
+		73D9C1A221E338B4005B9022 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		73D9C1A321E338B4005B9022 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		73D9C1A421E338B4005B9022 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		73D9C1C121E33AA3005B9022 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/Static/SocketRocket.framework; sourceTree = "<group>"; };
+		73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NBLCommonModule.framework; path = Carthage/Build/iOS/Static/NBLCommonModule.framework; sourceTree = "<group>"; };
+		73D9C1C321E33AA3005B9022 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/iOS/SwifterSwift.framework; sourceTree = "<group>"; };
+		73D9C1C821E33B24005B9022 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/SocketRocket.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73D9C15C21E32F97005B9022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D9C1C921E33B24005B9022 /* SocketRocket.framework in Frameworks */,
+				73D9C1C521E33AA3005B9022 /* NBLCommonModule.framework in Frameworks */,
+				73D9C1C621E33AA3005B9022 /* SwifterSwift.framework in Frameworks */,
+				73D9C1A521E338B5005B9022 /* Reachability.framework in Frameworks */,
+				73D9C1A621E338B5005B9022 /* JSONRPCKit.framework in Frameworks */,
+				73D9C1A721E338B5005B9022 /* Result.framework in Frameworks */,
+				73D9C1A821E338B5005B9022 /* Kingfisher.framework in Frameworks */,
+				73D9C1A921E338B5005B9022 /* RxSwift.framework in Frameworks */,
+				73D9C1AA21E338B5005B9022 /* TinyConstraints.framework in Frameworks */,
+				73D9C1AB21E338B5005B9022 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				73D9C1AC21E338B5005B9022 /* IQKeyboardManager.framework in Frameworks */,
+				73D9C1AE21E338B5005B9022 /* cybex_ios_core_cpp.framework in Frameworks */,
+				73D9C1AF21E338B5005B9022 /* AlamofireNetworkActivityLogger.framework in Frameworks */,
+				73D9C1B021E338B5005B9022 /* ESPullToRefresh.framework in Frameworks */,
+				73D9C1B121E338B5005B9022 /* XLActionController.framework in Frameworks */,
+				73D9C1B221E338B5005B9022 /* swift_qrcodejs.framework in Frameworks */,
+				73D9C1B321E338B5005B9022 /* ESTabBarController.framework in Frameworks */,
+				73D9C1B421E338B5005B9022 /* ReactiveSwift.framework in Frameworks */,
+				73D9C1B521E338B5005B9022 /* RxCocoa.framework in Frameworks */,
+				73D9C1B621E338B5005B9022 /* RxAtomic.framework in Frameworks */,
+				73D9C1B721E338B5005B9022 /* Moya.framework in Frameworks */,
+				73D9C1B821E338B5005B9022 /* XLPagerTabStrip.framework in Frameworks */,
+				73D9C1B921E338B5005B9022 /* Rswift.framework in Frameworks */,
+				73D9C1BA21E338B5005B9022 /* HandyJSON.framework in Frameworks */,
+				73D9C1BB21E338B5005B9022 /* RxBlocking.framework in Frameworks */,
+				73D9C1BC21E338B5005B9022 /* Alamofire.framework in Frameworks */,
+				73D9C1BD21E338B5005B9022 /* EFQRCode.framework in Frameworks */,
+				73D9C1BE21E338B5005B9022 /* ReactiveMoya.framework in Frameworks */,
+				73D9C1BF21E338B5005B9022 /* SwiftyJSON.framework in Frameworks */,
+				73D9C1C021E338B5005B9022 /* RxMoya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D9C17021E32F99005B9022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73D9C15621E32F97005B9022 = {
+			isa = PBXGroup;
+			children = (
+				73D9C16121E32F97005B9022 /* CybexTicket */,
+				73D9C17621E32F99005B9022 /* CybexTicketTests */,
+				73D9C16021E32F97005B9022 /* Products */,
+				73D9C18821E338B4005B9022 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		73D9C16021E32F97005B9022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C15F21E32F97005B9022 /* CybexTicket.app */,
+				73D9C17321E32F99005B9022 /* CybexTicketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73D9C16121E32F97005B9022 /* CybexTicket */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C16221E32F97005B9022 /* AppDelegate.swift */,
+				73D9C16421E32F97005B9022 /* ViewController.swift */,
+				73D9C16621E32F97005B9022 /* Main.storyboard */,
+				73D9C16921E32F99005B9022 /* Assets.xcassets */,
+				73D9C16B21E32F99005B9022 /* LaunchScreen.storyboard */,
+				73D9C16E21E32F99005B9022 /* Info.plist */,
+			);
+			path = CybexTicket;
+			sourceTree = "<group>";
+		};
+		73D9C17621E32F99005B9022 /* CybexTicketTests */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C17721E32F99005B9022 /* CybexTicketTests.swift */,
+				73D9C17921E32F99005B9022 /* Info.plist */,
+			);
+			path = CybexTicketTests;
+			sourceTree = "<group>";
+		};
+		73D9C18821E338B4005B9022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1C821E33B24005B9022 /* SocketRocket.framework */,
+				73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */,
+				73D9C1C121E33AA3005B9022 /* SocketRocket.framework */,
+				73D9C1C321E33AA3005B9022 /* SwifterSwift.framework */,
+				73D9C1A021E338B4005B9022 /* Alamofire.framework */,
+				73D9C19321E338B4005B9022 /* AlamofireNetworkActivityLogger.framework */,
+				73D9C19221E338B4005B9022 /* cybex_ios_core_cpp.framework */,
+				73D9C1A121E338B4005B9022 /* EFQRCode.framework */,
+				73D9C19421E338B4005B9022 /* ESPullToRefresh.framework */,
+				73D9C19721E338B4005B9022 /* ESTabBarController.framework */,
+				73D9C19E21E338B4005B9022 /* HandyJSON.framework */,
+				73D9C19021E338B4005B9022 /* IQKeyboardManager.framework */,
+				73D9C18F21E338B4005B9022 /* IQKeyboardManagerSwift.framework */,
+				73D9C18A21E338B4005B9022 /* JSONRPCKit.framework */,
+				73D9C18C21E338B4005B9022 /* Kingfisher.framework */,
+				73D9C19B21E338B4005B9022 /* Moya.framework */,
+				73D9C18921E338B4005B9022 /* Reachability.framework */,
+				73D9C1A221E338B4005B9022 /* ReactiveMoya.framework */,
+				73D9C19821E338B4005B9022 /* ReactiveSwift.framework */,
+				73D9C18B21E338B4005B9022 /* Result.framework */,
+				73D9C19D21E338B4005B9022 /* Rswift.framework */,
+				73D9C19A21E338B4005B9022 /* RxAtomic.framework */,
+				73D9C19F21E338B4005B9022 /* RxBlocking.framework */,
+				73D9C19921E338B4005B9022 /* RxCocoa.framework */,
+				73D9C1A421E338B4005B9022 /* RxMoya.framework */,
+				73D9C18D21E338B4005B9022 /* RxSwift.framework */,
+				73D9C19121E338B4005B9022 /* RxTest.framework */,
+				73D9C19621E338B4005B9022 /* swift_qrcodejs.framework */,
+				73D9C1A321E338B4005B9022 /* SwiftyJSON.framework */,
+				73D9C18E21E338B4005B9022 /* TinyConstraints.framework */,
+				73D9C19521E338B4005B9022 /* XLActionController.framework */,
+				73D9C19C21E338B4005B9022 /* XLPagerTabStrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73D9C15E21E32F97005B9022 /* CybexTicket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D9C17C21E32F99005B9022 /* Build configuration list for PBXNativeTarget "CybexTicket" */;
+			buildPhases = (
+				73D9C18321E33403005B9022 /* R.swift */,
+				73D9C15B21E32F97005B9022 /* Sources */,
+				73D9C15C21E32F97005B9022 /* Frameworks */,
+				73D9C15D21E32F97005B9022 /* Resources */,
+				73D9C18421E3342A005B9022 /* Carthage */,
+				73D9C18521E33431005B9022 /* Reveal */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CybexTicket;
+			productName = CybexTicket;
+			productReference = 73D9C15F21E32F97005B9022 /* CybexTicket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73D9C17221E32F99005B9022 /* CybexTicketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73D9C17F21E32F99005B9022 /* Build configuration list for PBXNativeTarget "CybexTicketTests" */;
+			buildPhases = (
+				73D9C16F21E32F99005B9022 /* Sources */,
+				73D9C17021E32F99005B9022 /* Frameworks */,
+				73D9C17121E32F99005B9022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73D9C17521E32F99005B9022 /* PBXTargetDependency */,
+			);
+			name = CybexTicketTests;
+			productName = CybexTicketTests;
+			productReference = 73D9C17321E32F99005B9022 /* CybexTicketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73D9C15721E32F97005B9022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.nbltrustdev;
+				TargetAttributes = {
+					73D9C15E21E32F97005B9022 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					73D9C17221E32F99005B9022 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 73D9C15E21E32F97005B9022;
+					};
+				};
+			};
+			buildConfigurationList = 73D9C15A21E32F97005B9022 /* Build configuration list for PBXProject "CybexTicket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73D9C15621E32F97005B9022;
+			productRefGroup = 73D9C16021E32F97005B9022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73D9C15E21E32F97005B9022 /* CybexTicket */,
+				73D9C17221E32F99005B9022 /* CybexTicketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73D9C15D21E32F97005B9022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D9C16D21E32F99005B9022 /* LaunchScreen.storyboard in Resources */,
+				73D9C16A21E32F99005B9022 /* Assets.xcassets in Resources */,
+				73D9C16821E32F97005B9022 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D9C17121E32F99005B9022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73D9C18321E33403005B9022 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT\"\n";
+		};
+		73D9C18421E3342A005B9022 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/CybexTicket-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Carthage/xcfilelists/CybexTicket-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		73D9C18521E33431005B9022 /* Reveal */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Reveal;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVEAL_APP_PATH=$(mdfind kMDItemCFBundleIdentifier=\"com.ittybittyapps.Reveal2\" | head -n 1)\nBUILD_SCRIPT_PATH=\"${REVEAL_APP_PATH}/Contents/SharedSupport/Scripts/reveal_server_build_phase.sh\"\nif [ \"${REVEAL_APP_PATH}\" -a -e \"${BUILD_SCRIPT_PATH}\" ]; then\n\"${BUILD_SCRIPT_PATH}\"\nelse\necho \"Reveal Server not loaded: Cannot find a compatible Reveal app.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73D9C15B21E32F97005B9022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D9C16521E32F97005B9022 /* ViewController.swift in Sources */,
+				73D9C16321E32F97005B9022 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73D9C16F21E32F99005B9022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D9C17821E32F99005B9022 /* CybexTicketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73D9C17521E32F99005B9022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73D9C15E21E32F97005B9022 /* CybexTicket */;
+			targetProxy = 73D9C17421E32F99005B9022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73D9C16621E32F97005B9022 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73D9C16721E32F97005B9022 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73D9C16B21E32F99005B9022 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73D9C16C21E32F99005B9022 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73D9C17A21E32F99005B9022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73D9C17B21E32F99005B9022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73D9C17D21E32F99005B9022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4LN46787D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
+				INFOPLIST_FILE = CybexTicket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		73D9C17E21E32F99005B9022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4LN46787D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
+				INFOPLIST_FILE = CybexTicket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		73D9C18021E32F99005B9022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4LN46787D;
+				INFOPLIST_FILE = CybexTicketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CybexTicket.app/CybexTicket";
+			};
+			name = Debug;
+		};
+		73D9C18121E32F99005B9022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z4LN46787D;
+				INFOPLIST_FILE = CybexTicketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CybexTicket.app/CybexTicket";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73D9C15A21E32F97005B9022 /* Build configuration list for PBXProject "CybexTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D9C17A21E32F99005B9022 /* Debug */,
+				73D9C17B21E32F99005B9022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D9C17C21E32F99005B9022 /* Build configuration list for PBXNativeTarget "CybexTicket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D9C17D21E32F99005B9022 /* Debug */,
+				73D9C17E21E32F99005B9022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73D9C17F21E32F99005B9022 /* Build configuration list for PBXNativeTarget "CybexTicketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73D9C18021E32F99005B9022 /* Debug */,
+				73D9C18121E32F99005B9022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73D9C15721E32F97005B9022 /* Project object */;
+}
