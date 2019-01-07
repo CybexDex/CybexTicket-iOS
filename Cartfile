@@ -5,6 +5,7 @@ git "https://github.com/Moya/Moya" "12.0.0-beta.1"
 github "onevcat/Kingfisher"
 git "https://github.com/alibaba/HandyJSON" "4.2.0-beta1"
 github "SwiftyJSON/SwiftyJSON" ~> 4.0
+git "https://github.com/phpmaple/BeareadToast" "master"
 
 git "https://github.com/fxwx23/JSONRPCKit" "xcode10-swift4.2"
 github "ashleymills/Reachability.swift"

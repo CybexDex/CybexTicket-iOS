@@ -1,15 +1,12 @@
 //
 //  AppDelegate.swift
-//  CybexTicket
+//  BeareadToast
 //
-//  Created by koofrank on 2019/1/7.
-//  Copyright © 2019 com.nbltrustdev. All rights reserved.
+//  Created by Archy on 2017/12/19.
+//  Copyright © 2017年 Archy. All rights reserved.
 //
 
 import UIKit
-import Reachability
-
-let reachability = Reachability()!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        monitorNetwork()
         return true
     }
 
@@ -45,20 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-}
-
-extension AppDelegate {
-    func monitorNetwork() {
-        ZYNetworkAccessibity.setAlertEnable(true)
-        ZYNetworkAccessibity.setStateDidUpdateNotifier { (state) in
-            if state == ZYNetworkAccessibleState.accessible {
-                NotificationCenter.default.post(name: .NetWorkChanged, object: nil)
-            }
-        }
-        ZYNetworkAccessibity.start()
-
-        try? reachability.startNotifier()
-    }
 
 
 }
+

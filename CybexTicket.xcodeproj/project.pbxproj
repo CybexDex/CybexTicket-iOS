@@ -43,6 +43,31 @@
 		73D9C1C521E33AA3005B9022 /* NBLCommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */; };
 		73D9C1C621E33AA3005B9022 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C321E33AA3005B9022 /* SwifterSwift.framework */; };
 		73D9C1C921E33B24005B9022 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1C821E33B24005B9022 /* SocketRocket.framework */; };
+		73D9C1D621E34435005B9022 /* DataBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1D021E34435005B9022 /* DataBaseApi.swift */; };
+		73D9C1D821E34435005B9022 /* NetworkBroadcastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1D221E34435005B9022 /* NetworkBroadcastAPI.swift */; };
+		73D9C1D921E34435005B9022 /* CybexWebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1D321E34435005B9022 /* CybexWebSocketService.swift */; };
+		73D9C1DA21E34435005B9022 /* CybexWebSocketServiceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1D421E34435005B9022 /* CybexWebSocketServiceMonitor.swift */; };
+		73D9C1DB21E34435005B9022 /* JsonRPCGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1D521E34435005B9022 /* JsonRPCGenerator.swift */; };
+		73D9C1DD21E3443F005B9022 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1DC21E3443E005B9022 /* ScanViewController.swift */; };
+		73D9C1E321E34B6A005B9022 /* ScanPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1E021E34B6A005B9022 /* ScanPreviewView.swift */; };
+		73D9C1E421E34B6A005B9022 /* ScanShadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1E121E34B6A005B9022 /* ScanShadeView.swift */; };
+		73D9C1E521E34B6A005B9022 /* ScanCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1E221E34B6A005B9022 /* ScanCornerView.swift */; };
+		73D9C1E721E34C2B005B9022 /* BeareadToast_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C1E621E34C2B005B9022 /* BeareadToast_swift.framework */; };
+		73D9C1EA21E34C69005B9022 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1E921E34C69005B9022 /* UIColor+Extensions.swift */; };
+		73D9C1EC21E34CBE005B9022 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1EB21E34CBE005B9022 /* String+Extensions.swift */; };
+		73D9C1F221E34DA1005B9022 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1EE21E34DA1005B9022 /* OrderBook.swift */; };
+		73D9C1F321E34DA1005B9022 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1EF21E34DA1005B9022 /* Balance.swift */; };
+		73D9C1F421E34DA1005B9022 /* Vesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1F021E34DA1005B9022 /* Vesting.swift */; };
+		73D9C1F521E34DA1005B9022 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1F121E34DA1005B9022 /* Account.swift */; };
+		73D9C1F721E34E66005B9022 /* ModelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1F621E34E66005B9022 /* ModelUtils.swift */; };
+		73D9C1F921E34ECB005B9022 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1F821E34ECB005B9022 /* Asset.swift */; };
+		73D9C1FB21E34F4B005B9022 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1FA21E34F4B005B9022 /* R.generated.swift */; };
+		73D9C1FD21E34FBD005B9022 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1FC21E34FBD005B9022 /* AsyncOperation.swift */; };
+		73D9C1FF21E34FFD005B9022 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C1FE21E34FFD005B9022 /* Helpers.swift */; };
+		73D9C20121E35021005B9022 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20021E35021005B9022 /* Delegate.swift */; };
+		73D9C20621E350A1005B9022 /* ZYNetworkAccessibity.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20421E350A1005B9022 /* ZYNetworkAccessibity.m */; };
+		73D9C20921E35113005B9022 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20821E35113005B9022 /* Constant.swift */; };
+		73D9C20B21E35191005B9022 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20A21E35191005B9022 /* NSObject+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +123,33 @@
 		73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NBLCommonModule.framework; path = Carthage/Build/iOS/Static/NBLCommonModule.framework; sourceTree = "<group>"; };
 		73D9C1C321E33AA3005B9022 /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/iOS/SwifterSwift.framework; sourceTree = "<group>"; };
 		73D9C1C821E33B24005B9022 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/iOS/SocketRocket.framework; sourceTree = "<group>"; };
+		73D9C1CA21E343BC005B9022 /* CybexTicket-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CybexTicket-Bridging-Header.h"; sourceTree = "<group>"; };
+		73D9C1D021E34435005B9022 /* DataBaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseApi.swift; sourceTree = "<group>"; };
+		73D9C1D221E34435005B9022 /* NetworkBroadcastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkBroadcastAPI.swift; sourceTree = "<group>"; };
+		73D9C1D321E34435005B9022 /* CybexWebSocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CybexWebSocketService.swift; path = Cybex/CybexWebSocketService.swift; sourceTree = "<group>"; };
+		73D9C1D421E34435005B9022 /* CybexWebSocketServiceMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CybexWebSocketServiceMonitor.swift; path = Cybex/CybexWebSocketServiceMonitor.swift; sourceTree = "<group>"; };
+		73D9C1D521E34435005B9022 /* JsonRPCGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonRPCGenerator.swift; path = Cybex/JsonRPCGenerator.swift; sourceTree = "<group>"; };
+		73D9C1DC21E3443E005B9022 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		73D9C1E021E34B6A005B9022 /* ScanPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanPreviewView.swift; sourceTree = "<group>"; };
+		73D9C1E121E34B6A005B9022 /* ScanShadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanShadeView.swift; sourceTree = "<group>"; };
+		73D9C1E221E34B6A005B9022 /* ScanCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanCornerView.swift; sourceTree = "<group>"; };
+		73D9C1E621E34C2B005B9022 /* BeareadToast_swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BeareadToast_swift.framework; path = Carthage/Build/iOS/BeareadToast_swift.framework; sourceTree = "<group>"; };
+		73D9C1E921E34C69005B9022 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		73D9C1EB21E34CBE005B9022 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		73D9C1EE21E34DA1005B9022 /* OrderBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+		73D9C1EF21E34DA1005B9022 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		73D9C1F021E34DA1005B9022 /* Vesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vesting.swift; sourceTree = "<group>"; };
+		73D9C1F121E34DA1005B9022 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		73D9C1F621E34E66005B9022 /* ModelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtils.swift; sourceTree = "<group>"; };
+		73D9C1F821E34ECB005B9022 /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		73D9C1FA21E34F4B005B9022 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		73D9C1FC21E34FBD005B9022 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		73D9C1FE21E34FFD005B9022 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		73D9C20021E35021005B9022 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		73D9C20421E350A1005B9022 /* ZYNetworkAccessibity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNetworkAccessibity.m; sourceTree = "<group>"; };
+		73D9C20521E350A1005B9022 /* ZYNetworkAccessibity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetworkAccessibity.h; sourceTree = "<group>"; };
+		73D9C20821E35113005B9022 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		73D9C20A21E35191005B9022 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D9C1E721E34C2B005B9022 /* BeareadToast_swift.framework in Frameworks */,
 				73D9C1C921E33B24005B9022 /* SocketRocket.framework in Frameworks */,
 				73D9C1C521E33AA3005B9022 /* NBLCommonModule.framework in Frameworks */,
 				73D9C1C621E33AA3005B9022 /* SwifterSwift.framework in Frameworks */,
@@ -170,12 +223,19 @@
 		73D9C16121E32F97005B9022 /* CybexTicket */ = {
 			isa = PBXGroup;
 			children = (
+				73D9C20721E35107005B9022 /* Config */,
+				73D9C20221E35090005B9022 /* Vendor */,
+				73D9C1ED21E34D3E005B9022 /* Models */,
+				73D9C1E821E34C56005B9022 /* Tools */,
+				73D9C1CE21E34424005B9022 /* Service */,
+				73D9C1DE21E3444D005B9022 /* ViewControllers */,
 				73D9C16221E32F97005B9022 /* AppDelegate.swift */,
-				73D9C16421E32F97005B9022 /* ViewController.swift */,
 				73D9C16621E32F97005B9022 /* Main.storyboard */,
+				73D9C1FA21E34F4B005B9022 /* R.generated.swift */,
 				73D9C16921E32F99005B9022 /* Assets.xcassets */,
 				73D9C16B21E32F99005B9022 /* LaunchScreen.storyboard */,
 				73D9C16E21E32F99005B9022 /* Info.plist */,
+				73D9C1CA21E343BC005B9022 /* CybexTicket-Bridging-Header.h */,
 			);
 			path = CybexTicket;
 			sourceTree = "<group>";
@@ -192,6 +252,7 @@
 		73D9C18821E338B4005B9022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73D9C1E621E34C2B005B9022 /* BeareadToast_swift.framework */,
 				73D9C1C821E33B24005B9022 /* SocketRocket.framework */,
 				73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */,
 				73D9C1C121E33AA3005B9022 /* SocketRocket.framework */,
@@ -226,6 +287,98 @@
 				73D9C19C21E338B4005B9022 /* XLPagerTabStrip.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73D9C1CE21E34424005B9022 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1CF21E34435005B9022 /* API */,
+				73D9C1D321E34435005B9022 /* CybexWebSocketService.swift */,
+				73D9C1D421E34435005B9022 /* CybexWebSocketServiceMonitor.swift */,
+				73D9C1D521E34435005B9022 /* JsonRPCGenerator.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		73D9C1CF21E34435005B9022 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1D021E34435005B9022 /* DataBaseApi.swift */,
+				73D9C1D221E34435005B9022 /* NetworkBroadcastAPI.swift */,
+			);
+			name = API;
+			path = Cybex/API;
+			sourceTree = "<group>";
+		};
+		73D9C1DE21E3444D005B9022 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1DF21E34B4D005B9022 /* Views */,
+				73D9C1DC21E3443E005B9022 /* ScanViewController.swift */,
+				73D9C16421E32F97005B9022 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		73D9C1DF21E34B4D005B9022 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1E221E34B6A005B9022 /* ScanCornerView.swift */,
+				73D9C1E021E34B6A005B9022 /* ScanPreviewView.swift */,
+				73D9C1E121E34B6A005B9022 /* ScanShadeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73D9C1E821E34C56005B9022 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C20A21E35191005B9022 /* NSObject+Extensions.swift */,
+				73D9C20021E35021005B9022 /* Delegate.swift */,
+				73D9C1FE21E34FFD005B9022 /* Helpers.swift */,
+				73D9C1FC21E34FBD005B9022 /* AsyncOperation.swift */,
+				73D9C1E921E34C69005B9022 /* UIColor+Extensions.swift */,
+				73D9C1EB21E34CBE005B9022 /* String+Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		73D9C1ED21E34D3E005B9022 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C1F621E34E66005B9022 /* ModelUtils.swift */,
+				73D9C1F821E34ECB005B9022 /* Asset.swift */,
+				73D9C1F121E34DA1005B9022 /* Account.swift */,
+				73D9C1EF21E34DA1005B9022 /* Balance.swift */,
+				73D9C1EE21E34DA1005B9022 /* OrderBook.swift */,
+				73D9C1F021E34DA1005B9022 /* Vesting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73D9C20221E35090005B9022 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C20321E350A1005B9022 /* ZYNetworkAccessibity */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		73D9C20321E350A1005B9022 /* ZYNetworkAccessibity */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C20421E350A1005B9022 /* ZYNetworkAccessibity.m */,
+				73D9C20521E350A1005B9022 /* ZYNetworkAccessibity.h */,
+			);
+			path = ZYNetworkAccessibity;
+			sourceTree = "<group>";
+		};
+		73D9C20721E35107005B9022 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				73D9C20821E35113005B9022 /* Constant.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +434,7 @@
 				TargetAttributes = {
 					73D9C15E21E32F97005B9022 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					73D9C17221E32F99005B9022 = {
 						CreatedOnToolsVersion = 10.1;
@@ -391,8 +545,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D9C1E321E34B6A005B9022 /* ScanPreviewView.swift in Sources */,
+				73D9C1F721E34E66005B9022 /* ModelUtils.swift in Sources */,
+				73D9C1DA21E34435005B9022 /* CybexWebSocketServiceMonitor.swift in Sources */,
 				73D9C16521E32F97005B9022 /* ViewController.swift in Sources */,
+				73D9C1EA21E34C69005B9022 /* UIColor+Extensions.swift in Sources */,
+				73D9C1F421E34DA1005B9022 /* Vesting.swift in Sources */,
+				73D9C1F521E34DA1005B9022 /* Account.swift in Sources */,
+				73D9C1FB21E34F4B005B9022 /* R.generated.swift in Sources */,
+				73D9C1D921E34435005B9022 /* CybexWebSocketService.swift in Sources */,
+				73D9C1E521E34B6A005B9022 /* ScanCornerView.swift in Sources */,
+				73D9C1F921E34ECB005B9022 /* Asset.swift in Sources */,
 				73D9C16321E32F97005B9022 /* AppDelegate.swift in Sources */,
+				73D9C1D821E34435005B9022 /* NetworkBroadcastAPI.swift in Sources */,
+				73D9C1FD21E34FBD005B9022 /* AsyncOperation.swift in Sources */,
+				73D9C1EC21E34CBE005B9022 /* String+Extensions.swift in Sources */,
+				73D9C1FF21E34FFD005B9022 /* Helpers.swift in Sources */,
+				73D9C1D621E34435005B9022 /* DataBaseApi.swift in Sources */,
+				73D9C20921E35113005B9022 /* Constant.swift in Sources */,
+				73D9C20621E350A1005B9022 /* ZYNetworkAccessibity.m in Sources */,
+				73D9C1F221E34DA1005B9022 /* OrderBook.swift in Sources */,
+				73D9C1DB21E34435005B9022 /* JsonRPCGenerator.swift in Sources */,
+				73D9C1DD21E3443F005B9022 /* ScanViewController.swift in Sources */,
+				73D9C1F321E34DA1005B9022 /* Balance.swift in Sources */,
+				73D9C1E421E34B6A005B9022 /* ScanShadeView.swift in Sources */,
+				73D9C20121E35021005B9022 /* Delegate.swift in Sources */,
+				73D9C20B21E35191005B9022 /* NSObject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -568,6 +747,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CybexTicket/CybexTicket-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -577,6 +758,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -591,6 +773,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nbltrustdev.CybexTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CybexTicket/CybexTicket-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

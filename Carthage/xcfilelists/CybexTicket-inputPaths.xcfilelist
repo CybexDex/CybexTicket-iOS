@@ -1,5 +1,6 @@
 $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
 $(SRCROOT)/Carthage/Build/iOS/AlamofireNetworkActivityLogger.framework
+$(SRCROOT)/Carthage/Build/iOS/BeareadToast_swift.framework
 $(SRCROOT)/Carthage/Build/iOS/EFQRCode.framework
 $(SRCROOT)/Carthage/Build/iOS/ESPullToRefresh.framework
 $(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework
@@ -19,7 +20,6 @@ $(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework
 $(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework
 $(SRCROOT)/Carthage/Build/iOS/RxMoya.framework
 $(SRCROOT)/Carthage/Build/iOS/RxSwift.framework
-$(SRCROOT)/Carthage/Build/iOS/RxTest.framework
 $(SRCROOT)/Carthage/Build/iOS/SocketRocket.framework
 $(SRCROOT)/Carthage/Build/iOS/SwifterSwift.framework
 $(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework
