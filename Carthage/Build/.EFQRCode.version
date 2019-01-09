@@ -1,0 +1,9 @@
+{
+  "commitish" : "4.4.2",
+  "iOS" : [
+    {
+      "name" : "EFQRCode",
+      "hash" : "9fd17f7334a9d2d174d26c6f8f0572708a6391684cbf14e2d2f0ab351e9ab420"
+    }
+  ]
+}

@@ -16,4 +16,5 @@ github "mac-cain13/R.swift.Library"
 github "roberthein/TinyConstraints"
 github "xmartlabs/XLActionController" ~> 4.0
 github "eggswift/pull-to-refresh"
+github "youngsoft/TangramKit"
 binary "https://cybexdex.github.io/cybex-ios-core-cpp/Carthage/iOS/cybex-ios-core-cpp.json"

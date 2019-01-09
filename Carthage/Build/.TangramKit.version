@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.3.1",
+  "iOS" : [
+    {
+      "name" : "TangramKit",
+      "hash" : "4b9c0bada8daf77806fe9c1fd8e363131e7525f5fc13a475e9c96bdac13b9b57"
+    }
+  ]
+}

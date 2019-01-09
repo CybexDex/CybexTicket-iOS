@@ -1,0 +1,9 @@
+{
+  "commitish" : "2.8",
+  "iOS" : [
+    {
+      "name" : "ESPullToRefresh",
+      "hash" : "7da199db71cb07d1fea16847367b72007c79e380c6fb638b3a727df1c464b91a"
+    }
+  ]
+}

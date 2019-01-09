@@ -23,6 +23,7 @@ $(SRCROOT)/Carthage/Build/iOS/RxSwift.framework
 $(SRCROOT)/Carthage/Build/iOS/SocketRocket.framework
 $(SRCROOT)/Carthage/Build/iOS/SwifterSwift.framework
 $(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework
+$(SRCROOT)/Carthage/Build/iOS/TangramKit.framework
 $(SRCROOT)/Carthage/Build/iOS/TinyConstraints.framework
 $(SRCROOT)/Carthage/Build/iOS/XLActionController.framework
 $(SRCROOT)/Carthage/Build/iOS/XLPagerTabStrip.framework

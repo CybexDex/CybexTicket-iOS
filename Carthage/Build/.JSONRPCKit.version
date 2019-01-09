@@ -1,0 +1,9 @@
+{
+  "commitish" : "8faf73b69d1465c9a0c2f6fff0a9e6ce1063357f",
+  "iOS" : [
+    {
+      "name" : "JSONRPCKit",
+      "hash" : "4c76e753d117ad5426aa987787a72955917f4830f0317a17658948d535fa5ab9"
+    }
+  ]
+}

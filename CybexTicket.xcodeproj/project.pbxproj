@@ -68,6 +68,7 @@
 		73D9C20621E350A1005B9022 /* ZYNetworkAccessibity.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20421E350A1005B9022 /* ZYNetworkAccessibity.m */; };
 		73D9C20921E35113005B9022 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20821E35113005B9022 /* Constant.swift */; };
 		73D9C20B21E35191005B9022 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C20A21E35191005B9022 /* NSObject+Extensions.swift */; };
+		73D9C20F21E5CC6A005B9022 /* TangramKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D9C20E21E5CC6A005B9022 /* TangramKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		73D9C20521E350A1005B9022 /* ZYNetworkAccessibity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNetworkAccessibity.h; sourceTree = "<group>"; };
 		73D9C20821E35113005B9022 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		73D9C20A21E35191005B9022 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		73D9C20E21E5CC6A005B9022 /* TangramKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TangramKit.framework; path = Carthage/Build/iOS/TangramKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				73D9C1A921E338B5005B9022 /* RxSwift.framework in Frameworks */,
 				73D9C1AA21E338B5005B9022 /* TinyConstraints.framework in Frameworks */,
 				73D9C1AB21E338B5005B9022 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				73D9C20F21E5CC6A005B9022 /* TangramKit.framework in Frameworks */,
 				73D9C1AC21E338B5005B9022 /* IQKeyboardManager.framework in Frameworks */,
 				73D9C1AE21E338B5005B9022 /* cybex_ios_core_cpp.framework in Frameworks */,
 				73D9C1AF21E338B5005B9022 /* AlamofireNetworkActivityLogger.framework in Frameworks */,
@@ -252,6 +255,7 @@
 		73D9C18821E338B4005B9022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73D9C20E21E5CC6A005B9022 /* TangramKit.framework */,
 				73D9C1E621E34C2B005B9022 /* BeareadToast_swift.framework */,
 				73D9C1C821E33B24005B9022 /* SocketRocket.framework */,
 				73D9C1C221E33AA3005B9022 /* NBLCommonModule.framework */,
@@ -735,6 +739,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -761,6 +766,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
