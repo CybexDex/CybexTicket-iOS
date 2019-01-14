@@ -14,6 +14,7 @@ enum DataBaseCatogery: String {
     case getFullAccounts
     case getChainId
     case getObjects
+    case lookupAssetSymbols
     case subscribeToMarket
     case getLimitOrders
     case getBalanceObjects
@@ -21,6 +22,7 @@ enum DataBaseCatogery: String {
     case getRequiredFees
     case getBlock
     case getTicker
+    case getBlockHeader
 }
 
 struct GetRequiredFees: JSONRPCKit.Request, JSONRPCResponse {

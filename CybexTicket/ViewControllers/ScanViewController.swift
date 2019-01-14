@@ -18,11 +18,19 @@ class ScanViewController: UIViewController {
     var captusession: AVCaptureSession?
     var viewSize: CGSize!
 
+    var scanResult = Delegate<String, Void>()
+
 	override func viewDidLoad() {
         super.viewDidLoad()
+
         viewSize = self.view.bounds.size
         setupUI()
         checkCameraAuth()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = true
     }
 
     func checkCameraAuth() {
@@ -119,7 +127,9 @@ extension ScanViewController: AVCaptureMetadataOutputObjectsDelegate {
         if metadataObjects.count > 0 {
             if let obj: AVMetadataMachineReadableCodeObject = metadataObjects[0] as? AVMetadataMachineReadableCodeObject,
                 let result = obj.stringValue {
+                scanResult.call(result)
 
+                self.navigationController?.popViewController(animated: true)
             }
         }
     }

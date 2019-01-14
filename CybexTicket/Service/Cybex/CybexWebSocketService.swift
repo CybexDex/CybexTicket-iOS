@@ -70,7 +70,7 @@ class CybexWebSocketService: NSObject {
     private override init() {
         super.init()
 
-        monitor()
+//        monitor()
         self.queue = OperationQueue()
 
         self.queue.maxConcurrentOperationCount = 3

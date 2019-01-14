@@ -8,6 +8,8 @@
 
 import UIKit
 import TangramKit
+import SwiftyJSON
+import BeareadToast_swift
 
 class ViewController: UIViewController {
     
@@ -16,14 +18,20 @@ class ViewController: UIViewController {
     weak var ticketTextField: UITextField!
     weak var scanResultLayout: TGLinearLayout!
     weak var userLayout: TGLinearLayout!
+    weak var checkedAccountNameLabel: UILabel!
+    weak var checkedTicketAmountLabel: UILabel!
+
     weak var userResultLayout: TGFrameLayout!
     weak var userResultLabel: UILabel!
     weak var userResultImageView: UIImageView!
-    
+
+    var transaction: String?
+    var chooseAsset: AssetInfo?
+    var toAccount: Account?
+
     override func loadView() {
         super.loadView()
         self.navigationController?.navigationBar.barTintColor = .yellow
-        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = "Cybex验票终端"
@@ -41,36 +49,149 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isTranslucent = false
     }
 
     @objc func updateScanButtonState() {
         let account = self.accountTextField.text ?? ""
         let ticket = self.ticketTextField.text ?? ""
-        self.scanButton.isEnabled = account.count > 0 && ticket.count > 0
+        guard !account.isEmpty, !ticket.isEmpty else {
+            self.scanButton.isEnabled = false
+            return
+        }
+
+        CybexDatabaseApiService.request(target: .getAccount(name: account), success: { (json) in
+            guard json.arrayValue.count != 0, let account = json[0][1]["account"].dictionaryObject else {
+                self.scanButton.isEnabled = false
+
+                return
+            }
+            self.toAccount = Account.deserialize(from: account)
+
+            CybexDatabaseApiService.request(target: .lookupSymbol(name: ticket), success: { (assetJson) in
+                guard assetJson.arrayValue.count != 0, let data = assetJson[0].dictionaryObject else {
+                    self.scanButton.isEnabled = false
+
+                    return
+                }
+
+                self.chooseAsset = AssetInfo.deserialize(from: data)
+
+                self.scanButton.isEnabled = self.toAccount != nil && self.chooseAsset != nil
+
+            }, error: { (error2) in
+
+            }, failure: { (error2) in
+
+            })
+        }, error: { (error) in
+
+        }) { (error) in
+
+        }
     }
     
     @objc func scanButtonClicked() {
-        //扫描逻辑处理 ...
-        
-        showScanResult(false)
+        transaction = nil
+        let scanVC = ScanViewController()
+        scanVC.scanResult.delegate(on: self) { (self, result) in
+            self.checkTicket(result)
+        }
+
+        self.navigationController?.pushViewController(scanVC)
+    }
+
+    func getTicketInfo() {
+
+    }
+
+    func checkTicket(_ result: String) {
+        guard self.transaction != result else { return }
+
+        self.transaction = result
+        self.checkedAccountNameLabel.text = "账户名   "
+        self.checkedAccountNameLabel.sizeToFit()
+        self.checkedTicketAmountLabel.text = "票张数   "
+        self.checkedTicketAmountLabel.sizeToFit()
+
+        guard let toAccount = toAccount, let chooseAsset = chooseAsset else { return }
+        let precisionNumber = pow(10, chooseAsset.precision)
+
+        var passed = false
+
+        let json = JSON(parseJSON: result)
+
+        guard let operation = json["operations"][0][1].dictionaryObject,
+            let transferObject = Transfer.deserialize(from: operation) else { return }
+        let realAmount = transferObject.amount.amount.decimal() / precisionNumber
+
+        if transferObject.amount.assetID == chooseAsset.id,
+            transferObject.to == toAccount.id {
+            passed = true
+        }
+
+        if passed {
+            CybexDatabaseApiService.request(target: .getAccount(name: transferObject.from), success: { (json) in
+                guard json.arrayValue.count != 0, let account = json[0][1]["account"].dictionaryObject, let accountObject = Account.deserialize(from: account) else { return }
+
+                self.checkedAccountNameLabel.text = "账户名   \(accountObject.name)"
+                self.checkedAccountNameLabel.sizeToFit()
+                self.checkedTicketAmountLabel.text = "票张数   \(realAmount)"
+                self.checkedTicketAmountLabel.sizeToFit()
+            }, error: { (error) in
+
+            }) { (error) in
+
+            }
+
+            showScanResult(false)
+        }
+        else {
+            showUserResult(true)
+        }
     }
     
     @objc func userButtonClicked() {
-        //使用逻辑处理 ...
-        
-        showUserResult(true)
+        guard let transaction = transaction else { return }
+
+        _ = BeareadToast.showLoading(inView: self.view)
+
+        CybexWebSocketService.shared.connect()
+
+        CybexWebSocketService.shared.canSendMessage.delegate(on: self) { (self, _) in
+            let request = BroadcastTransactionRequest(response: { (data) in
+                _ = BeareadToast.hideIn(self.view)
+
+                if String(describing: data) == "<null>" {
+                    self.showUserResult(false)
+                }
+                else {
+                    self.showUserResult(true)
+                }
+
+                CybexWebSocketService.shared.disconnect()
+            }, jsonstr: transaction)
+
+            CybexWebSocketService.shared.send(request: request)
+        }
     }
     
     /**
      * @param isInvalid 是否有效 true无效 false有效
      */
     func showScanResult(_ isInvalid: Bool) {
+
         self.scanResultLayout.tg_visibility = .visible
+
         if (isInvalid) {
             showUserResult(isInvalid)
         } else {
             self.userLayout.tg_visibility = .visible
+            self.userResultLayout.tg_visibility = .gone
         }
     }
     
@@ -199,18 +320,20 @@ class ViewController: UIViewController {
         self.userLayout = userLayout
         
         let accountResultLabel = UILabel()
-        accountResultLabel.text = "账户名   Cybex-test"
+        accountResultLabel.text = "账户名   "
         accountResultLabel.textColor = .darkTwo
         accountResultLabel.font = UIFont.systemFont(ofSize: 14)
         accountResultLabel.sizeToFit()
-        
+        checkedAccountNameLabel = accountResultLabel
+
         let ticketResultLabel = UILabel()
-        ticketResultLabel.text = "票张数   1"
+        ticketResultLabel.text = "票张数   "
         ticketResultLabel.textColor = .darkTwo
         ticketResultLabel.font = UIFont.systemFont(ofSize: 14)
         ticketResultLabel.tg_top ~= 7;
         ticketResultLabel.sizeToFit()
-        
+        checkedTicketAmountLabel = ticketResultLabel
+
         let userButton = UIButton()
         userButton.tg_width ~= .fill
         userButton.tg_height ~= 40
@@ -231,7 +354,7 @@ class ViewController: UIViewController {
         userResultLayout.tg_width ~= .fill
         userResultLayout.tg_height ~= .wrap
         userResultLayout.tg_visibility = .gone
-        self.userResultLayout = userResultLayout;
+        self.userResultLayout = userResultLayout
         
         let userResultLabel = UILabel()
         userResultLabel.tg_width ~= 176
