@@ -11,6 +11,14 @@
 		7315AC2521E9D17F0006CA66 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7315AC2421E9D17F0006CA66 /* Operation.swift */; };
 		734811F421EB599C00FB10B0 /* CybexDatabaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734811F321EB599C00FB10B0 /* CybexDatabaseApi.swift */; };
 		73A4CB9521EC3A6C00C93DA6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9421EC3A6C00C93DA6 /* String+Extension.swift */; };
+		73A4CB9721ED908900C93DA6 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9621ED908900C93DA6 /* ViewController+UI.swift */; };
+		73A4CB9A21EDB1AB00C93DA6 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9921EDB1AB00C93DA6 /* UIButton+Extensions.swift */; };
+		73A4CB9C21EDB1E800C93DA6 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9B21EDB1E800C93DA6 /* UIViewController+Extensions.swift */; };
+		73A4CB9E21EDB94200C93DA6 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9D21EDB94200C93DA6 /* UILabel+Extensions.swift */; };
+		73A4CBA021EDB94E00C93DA6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CB9F21EDB94E00C93DA6 /* UIView+Extensions.swift */; };
+		73A4CBA221EDB95B00C93DA6 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CBA121EDB95B00C93DA6 /* UITextField+Extensions.swift */; };
+		73A4CBA421EDBA5E00C93DA6 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CBA321EDBA5E00C93DA6 /* UIFont+Extensions.swift */; };
+		73A4CBA621EDBF4D00C93DA6 /* Dimen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4CBA521EDBF4D00C93DA6 /* Dimen.swift */; };
 		73D9C16321E32F97005B9022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C16221E32F97005B9022 /* AppDelegate.swift */; };
 		73D9C16521E32F97005B9022 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9C16421E32F97005B9022 /* ViewController.swift */; };
 		73D9C16821E32F97005B9022 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D9C16621E32F97005B9022 /* Main.storyboard */; };
@@ -90,6 +98,14 @@
 		7315AC2421E9D17F0006CA66 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		734811F321EB599C00FB10B0 /* CybexDatabaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CybexDatabaseApi.swift; sourceTree = "<group>"; };
 		73A4CB9421EC3A6C00C93DA6 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		73A4CB9621ED908900C93DA6 /* ViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
+		73A4CB9921EDB1AB00C93DA6 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CB9B21EDB1E800C93DA6 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CB9D21EDB94200C93DA6 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CB9F21EDB94E00C93DA6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CBA121EDB95B00C93DA6 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CBA321EDBA5E00C93DA6 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		73A4CBA521EDBF4D00C93DA6 /* Dimen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimen.swift; sourceTree = "<group>"; };
 		73D9C15F21E32F97005B9022 /* CybexTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CybexTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D9C16221E32F97005B9022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D9C16421E32F97005B9022 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +231,6 @@
 		10D34ACB21E873AA00472A45 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				10D34ACC21E873E700472A45 /* UIColor+Additions.swift */,
 				73A4CB9421EC3A6C00C93DA6 /* String+Extension.swift */,
 			);
 			path = Extensions;
@@ -227,6 +242,21 @@
 				734811F321EB599C00FB10B0 /* CybexDatabaseApi.swift */,
 			);
 			path = HTTP;
+			sourceTree = "<group>";
+		};
+		73A4CB9821EDB18000C93DA6 /* UI+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73A4CBA521EDBF4D00C93DA6 /* Dimen.swift */,
+				10D34ACC21E873E700472A45 /* UIColor+Additions.swift */,
+				73A4CB9921EDB1AB00C93DA6 /* UIButton+Extensions.swift */,
+				73A4CB9B21EDB1E800C93DA6 /* UIViewController+Extensions.swift */,
+				73A4CB9D21EDB94200C93DA6 /* UILabel+Extensions.swift */,
+				73A4CB9F21EDB94E00C93DA6 /* UIView+Extensions.swift */,
+				73A4CBA121EDB95B00C93DA6 /* UITextField+Extensions.swift */,
+				73A4CBA321EDBA5E00C93DA6 /* UIFont+Extensions.swift */,
+			);
+			path = "UI+Extensions";
 			sourceTree = "<group>";
 		};
 		73D9C15621E32F97005B9022 = {
@@ -251,6 +281,7 @@
 		73D9C16121E32F97005B9022 /* CybexTicket */ = {
 			isa = PBXGroup;
 			children = (
+				73A4CB9821EDB18000C93DA6 /* UI+Extensions */,
 				10D34ACB21E873AA00472A45 /* Extensions */,
 				73D9C20721E35107005B9022 /* Config */,
 				73D9C20221E35090005B9022 /* Vendor */,
@@ -347,6 +378,7 @@
 				73D9C1DF21E34B4D005B9022 /* Views */,
 				73D9C1DC21E3443E005B9022 /* ScanViewController.swift */,
 				73D9C16421E32F97005B9022 /* ViewController.swift */,
+				73A4CB9621ED908900C93DA6 /* ViewController+UI.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -579,17 +611,21 @@
 			files = (
 				73D9C1E321E34B6A005B9022 /* ScanPreviewView.swift in Sources */,
 				73D9C1F721E34E66005B9022 /* ModelUtils.swift in Sources */,
+				73A4CB9E21EDB94200C93DA6 /* UILabel+Extensions.swift in Sources */,
 				73D9C1DA21E34435005B9022 /* CybexWebSocketServiceMonitor.swift in Sources */,
 				73D9C16521E32F97005B9022 /* ViewController.swift in Sources */,
 				73D9C1EA21E34C69005B9022 /* UIColor+Extensions.swift in Sources */,
 				73D9C1F421E34DA1005B9022 /* Vesting.swift in Sources */,
+				73A4CBA021EDB94E00C93DA6 /* UIView+Extensions.swift in Sources */,
 				73D9C1F521E34DA1005B9022 /* Account.swift in Sources */,
 				73D9C1FB21E34F4B005B9022 /* R.generated.swift in Sources */,
 				73D9C1D921E34435005B9022 /* CybexWebSocketService.swift in Sources */,
+				73A4CB9A21EDB1AB00C93DA6 /* UIButton+Extensions.swift in Sources */,
 				73D9C1E521E34B6A005B9022 /* ScanCornerView.swift in Sources */,
 				734811F421EB599C00FB10B0 /* CybexDatabaseApi.swift in Sources */,
 				73D9C1F921E34ECB005B9022 /* Asset.swift in Sources */,
 				73D9C16321E32F97005B9022 /* AppDelegate.swift in Sources */,
+				73A4CBA421EDBA5E00C93DA6 /* UIFont+Extensions.swift in Sources */,
 				73D9C1D821E34435005B9022 /* NetworkBroadcastAPI.swift in Sources */,
 				73D9C1FD21E34FBD005B9022 /* AsyncOperation.swift in Sources */,
 				73D9C1EC21E34CBE005B9022 /* String+Extensions.swift in Sources */,
@@ -598,13 +634,17 @@
 				73D9C1D621E34435005B9022 /* DataBaseApi.swift in Sources */,
 				10D34ACD21E873E700472A45 /* UIColor+Additions.swift in Sources */,
 				73D9C20921E35113005B9022 /* Constant.swift in Sources */,
+				73A4CB9C21EDB1E800C93DA6 /* UIViewController+Extensions.swift in Sources */,
 				73D9C20621E350A1005B9022 /* ZYNetworkAccessibity.m in Sources */,
 				73D9C1F221E34DA1005B9022 /* OrderBook.swift in Sources */,
 				73D9C1DB21E34435005B9022 /* JsonRPCGenerator.swift in Sources */,
+				73A4CBA621EDBF4D00C93DA6 /* Dimen.swift in Sources */,
 				73D9C1DD21E3443F005B9022 /* ScanViewController.swift in Sources */,
 				73D9C1F321E34DA1005B9022 /* Balance.swift in Sources */,
+				73A4CB9721ED908900C93DA6 /* ViewController+UI.swift in Sources */,
 				73D9C1E421E34B6A005B9022 /* ScanShadeView.swift in Sources */,
 				73D9C20121E35021005B9022 /* Delegate.swift in Sources */,
+				73A4CBA221EDB95B00C93DA6 /* UITextField+Extensions.swift in Sources */,
 				73A4CB9521EC3A6C00C93DA6 /* String+Extension.swift in Sources */,
 				73D9C20B21E35191005B9022 /* NSObject+Extensions.swift in Sources */,
 			);
