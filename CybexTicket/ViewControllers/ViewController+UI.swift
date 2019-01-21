@@ -12,7 +12,7 @@ import TangramKit
 extension ViewController {
     func initView() {
        
-        self.title = "Cybex验票终端"
+        self.title = "茶恬园验票终端"
         setNavigationBarWith(.yellow)
 
         self.edgesForExtendedLayout = UIRectEdge(rawValue:0)
@@ -38,10 +38,10 @@ extension ViewController {
         scanLayout.tg_padding = UIEdgeInsets(top: 26, left: 20, bottom: 30, right: 15)
         rootLayout.addSubview(scanLayout)
 
-        let accountLabel = UILabel.makeTitleLabel("验证账户", to: scanLayout)
+        let accountLabel = UILabel.makeTitleLabel("茶恬园账户", to: scanLayout)
         accountLabel.tg_size(width: .wrap, height: .wrap)
 
-        let accountTextField = UITextField.makeTextField("请输入验证账户", to: scanLayout)
+        let accountTextField = UITextField.makeTextField("请输入茶恬园账户", to: scanLayout)
         accountTextField.addTarget(self, action: #selector(updateScanButtonState), for: .editingChanged)
         self.accountTextField = accountTextField
         accountTextField.tg_top ~= 7
@@ -49,11 +49,11 @@ extension ViewController {
         let divider_account = UIView.makeBorder(scanLayout)
         divider_account.tg_top ~= 7
 
-        let ticketLabel = UILabel.makeTitleLabel("票名称", to: scanLayout)
+        let ticketLabel = UILabel.makeTitleLabel("船票名称", to: scanLayout)
         ticketLabel.tg_top ~= 14
         ticketLabel.tg_size(width: .wrap, height: .wrap)
 
-        let ticketTextField = UITextField.makeTextField("请输入票名称", to: scanLayout)
+        let ticketTextField = UITextField.makeTextField("请输入船票名称", to: scanLayout)
         ticketTextField.addTarget(self, action: #selector(updateScanButtonState), for: .editingChanged)
         self.ticketTextField = ticketTextField
         ticketTextField.tg_top ~= 7
@@ -98,11 +98,11 @@ extension ViewController {
         self.userLayout = userLayout
         rootLayout.addSubview(userLayout)
 
-        let accountResultLabel = UILabel.makeTitleLabel("账户名   ", to: userLayout)
+        let accountResultLabel = UILabel.makeTitleLabel("乘客账户   ", to: userLayout)
         accountResultLabel.tg_size(width: .fill, height: .wrap)
         checkedAccountNameLabel = accountResultLabel
 
-        let ticketResultLabel = UILabel.makeTitleLabel("票张数   ", to: userLayout)
+        let ticketResultLabel = UILabel.makeTitleLabel("船票张数   ", to: userLayout)
         ticketResultLabel.tg_size(width: .fill, height: .wrap)
         ticketResultLabel.tg_top ~= 7
         checkedTicketAmountLabel = ticketResultLabel

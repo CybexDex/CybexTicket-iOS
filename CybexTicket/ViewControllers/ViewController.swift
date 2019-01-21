@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     var successHint: String {
         guard let useAccountName = useAccountName, let useAmount = useAmount else { return "" }
 
-        return  "恭喜您，您的票验证通过！\n \n" + "账户名   \(useAccountName)\n" + "票张数   \(useAmount)"
+        return  "验证通过！\n \n" + "乘客账户   \(useAccountName)\n" + "船票张数   \(useAmount)"
     }
 
     override func loadView() {
@@ -249,12 +249,12 @@ extension ViewController {
     }
 
     func fillScanResultPanel(_ name: String, amount: String) {
-        checkedAccountNameLabel.text = "账户名   \(name)"
-        checkedTicketAmountLabel.text = "票张数   \(amount)"
+        checkedAccountNameLabel.text = "乘客账户   \(name)"
+        checkedTicketAmountLabel.text = "船票张数   \(amount)"
     }
 
     func fillUserResult(_ isInvalid: Bool) {
-        userResultLabel.text = isInvalid ? "非常抱歉，您使用的是无效票，请重新扫码！" : successHint
+        userResultLabel.text = isInvalid ? "无效票，请重新扫码！" : successHint
         userResultImageView.image = isInvalid ? R.image.icInvalidTicket() : R.image.icUsedTicket()
     }
 }

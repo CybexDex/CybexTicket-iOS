@@ -115,8 +115,8 @@ class ScanViewController: UIViewController {
 
             let rect = ScanSetting.scanRect
             output.rectOfInterest = CGRect(x: rect.origin.y / size.height, y: rect.origin.x / size.width, width: rect.size.height / size.height, height: rect.size.width / size.width)
-            output.metadataObjectTypes = output.availableMetadataObjectTypes
-            output.setMetadataObjectsDelegate(self as AVCaptureMetadataOutputObjectsDelegate, queue: DispatchQueue.main)
+            output.metadataObjectTypes = [.qr]
+            output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
         }
     }
 
@@ -126,8 +126,12 @@ extension ScanViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count > 0 {
             if let obj: AVMetadataMachineReadableCodeObject = metadataObjects[0] as? AVMetadataMachineReadableCodeObject,
+                obj.type == AVMetadataObject.ObjectType.qr,
                 let result = obj.stringValue {
-                scanResult.call(result)
+
+                let transaction = BinHelper.deserializeTransaction(result)
+
+                scanResult.call(transaction)
 
                 self.navigationController?.popViewController(animated: true)
             }
